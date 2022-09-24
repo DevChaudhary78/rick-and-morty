@@ -2,41 +2,41 @@
   <main>
     <img src="../assets/morty.png" alt="The image of rick and morty" id="anchor">
     <div class="eyes">
-      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -200px; left: -72px">
-      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -186px; left: -134px">
-      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -318px; left: 7px">
-      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -317px; left: 59px">
+      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -194px; left: -144px">
+      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -204px; left: -81px">
+      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -327px; left: -5px">
+      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -328px; left: 53px">
     </div>
   </main>
 </template>
 
 <script>
 
-
-const angle = function(cx, cy, ex, ey) {
-  const dy = ey - cy;
-  const dx = ex - cx;
-
-  const rad = Math.atan2(dy, dx);
-  return rad * 180 / Math.PI;
-}
-document.addEventListener("mouseover", (e) => {
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-
-  const anchor = document.getElementById('anchor');
-  const rekt = anchor.getBoundingClientRect();
-  const anchorX = rekt.left + rekt.width / 2;
-  const anchorY = rekt.top + rekt.height / 2;
-  // const eyes = document.querySelectorAll('.eyes');
-
-  const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
-
-  console.log(angleDeg);
-  // eyes.forEach(eye => {
-  //   eye.style.transform = `rotate(${90+angleDeg}deg)`;
-  // })
-})
+// const angle = function(cx, cy, ex, ey) {
+//   const dy = ey - cy;
+//   const dx = ex - cx;
+//
+//   const rad = Math.atan2(dy, dx);
+//   return rad * 180 / Math.PI;
+// }
+// document.addEventListener("mouseover", (e) => {
+//   const mouseX = e.clientX;
+//   const mouseY = e.clientY;
+//
+//   const anchor = document.getElementById('anchor');
+//   const rekt = anchor.getBoundingClientRect();
+//   const anchorX = rekt.left + rekt.width / 2;
+//   const anchorY = rekt.top + rekt.height / 2;
+//
+//   const eyes = document.querySelectorAll('.eyes');
+//
+//   const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+//
+//   console.log(angleDeg);
+//   eyes.forEach(eye => {
+//     eye.style.transform = `rotate(${90+angleDeg}deg)`;
+//   })
+// })
 
 export default {
   name: "RickAndMorty",
