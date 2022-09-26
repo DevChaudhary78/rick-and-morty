@@ -1,24 +1,29 @@
 # rick-and-morty
+## Visit at <a href="https://eyeball-transition.netlify.app">eyeball-transition.netlify.app</a>
 
-## Project setup
+## want to make some changes?
+clone this repo
+```
+git clone https://github.com/DevChaudhary78/rick-and-morty
+```
+
+# to run this repo locally
+to install the dependencies:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+to serve the project locally on localhost:8080
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+compiles and minifies for production
 ```
 npm run build
 ```
 
-### Lints and fixes files
+lints and fix files
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
