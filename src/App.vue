@@ -16,16 +16,14 @@ export default {
 </script>
 
 <style>
-body {
-  background: #000;
-  color: #fff;
-  padding: 0;
-  margin: 0;
-}
-
-#app {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
 }
 </style>
