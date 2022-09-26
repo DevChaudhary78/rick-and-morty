@@ -2,10 +2,10 @@
   <main>
     <img src="../assets/morty.png" alt="The image of rick and morty" id="anchor">
     <div class="eyes">
-      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -194px; left: -144px">
-      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -204px; left: -81px">
-      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -327px; left: -5px">
-      <img src="../assets/eyes.jpg" alt="Just image of eyes" id="eye" style="top: -328px; left: 53px">
+      <img src="../assets/eyes.jpg" alt="Just image of eyes" class="eye" style="top: -194px; left: -144px">
+      <img src="../assets/eyes.jpg" alt="Just image of eyes" class="eye" style="top: -204px; left: -81px">
+      <img src="../assets/eyes.jpg" alt="Just image of eyes" class="eye" style="top: -327px; left: -5px">
+      <img src="../assets/eyes.jpg" alt="Just image of eyes" class="eye" style="top: -328px; left: 53px">
     </div>
   </main>
 </template>
@@ -52,6 +52,7 @@ export default {
 
         this.eyes.forEach(eye => {
           eye.style.tranform = `rotate(${90+this.angleDeg}deg)`;
+          this.anchor.style.filter = `hue-rotate(${this.angleDeg}deg)`;
         })
       })
     },
@@ -70,7 +71,7 @@ export default {
     this.anchorX = this.rekt.left + this.rekt.width / 2;
     this.anchorY = this.rekt.top + this.rekt.height / 2;
 
-    this.eyes = document.querySelectorAll('#eye')
+    this.eyes = document.querySelectorAll('.eye')
 
     this.initialize();
   }
@@ -88,7 +89,7 @@ main {
   position: absolute;
 }
 
-#eye {
+.eye {
   position: absolute;
   height: 40px;
   width: 40px;
