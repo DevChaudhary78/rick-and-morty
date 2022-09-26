@@ -21,10 +21,8 @@ export default {
 
         this.angleDeg = this.angle(this.mouseX, this.mouseY, this.anchorX, this.anchorY);
 
-        console.log(this.angleDeg);
-
         this.eyes.forEach(eye => {
-          eye.style.tranform = `rotate(${90+this.angleDeg}deg)`;
+          eye.style.transform = `rotate(${90+this.angleDeg}deg)`;
           this.anchor.style.filter = `hue-rotate(${this.angleDeg}deg)`;
         })
       })
